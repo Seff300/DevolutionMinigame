@@ -1,0 +1,13 @@
+name: Devolution
+version: 1.0 Beta
+author: dado997
+main: it.dado997.Devolution.Main
+description: A minigame like the real Devolution minigame in the MinePlex server!
+
+commands:
+  devolution:
+    description: The main command of the Devolution plugin.
+    aliases: [dev, DEVOLUTION, DEV]
+  devolutionadmin:
+    description: The command for setup arenas of the Devolution plugin.
+    aliases: [devadmin, DEVOLUTIONADMIN, DevolutionAdmin, dadmin]
