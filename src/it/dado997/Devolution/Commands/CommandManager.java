@@ -1,5 +1,6 @@
 package it.dado997.Devolution.Commands;
 
+import it.dado997.Devolution.Main;
 import it.dado997.Devolution.Files.ArenaFile;
 import it.dado997.Devolution.Files.Messages;
 import it.dado997.Devolution.Game.Arena;
@@ -11,6 +12,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class CommandManager implements CommandExecutor {
+	
+	Main plugin;
 
     public boolean onCommand(final CommandSender sender, final Command command, final String label, final String[] args) {
         if (!(sender instanceof Player)) {
@@ -47,7 +50,7 @@ public class CommandManager implements CommandExecutor {
                     player.sendMessage("Lobby world is unloaded, can't join lobby");
                 }
             } else {
-                sender.sendMessage("Lobby is not set");
+                sender.sendMessage(ChatUtil.format(this.plugin.getConfig().getString("Messages.prefix") + this.plugin.getConfig().getString("Messages.lobbynotset")));
             }
             return true;
         }

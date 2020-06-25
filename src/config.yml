@@ -1,3 +1,7 @@
+#Messages
+Messages:
+   prefix: "&9&lDevolution &8> &f"
+   lobbynotset: "Lobby is not set"
 golem-weapon-name: "GolemWeapon"
 blaze-weapon-name: "BlazeWeapon"
 spider-weapon-name: "SpiderWeapon"

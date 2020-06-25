@@ -19,7 +19,7 @@ public class SpectatorEvent extends BukkitRunnable {
     public static ItemStack blazeweapon = new ItemStack(Material.BLAZE_ROD);
     public static ItemStack spiderweapon = new ItemStack(Material.SPIDER_EYE);
     public static ItemStack slimeweapon = new ItemStack(Material.SLIME_BALL);
-    public static ItemStack creeperweapon = new ItemStack(Material.SULPHUR);
+    public static ItemStack creeperweapon = new ItemStack(Material.LEGACY_SULPHUR);
     public static ItemStack chickenweapon = new ItemStack(Material.FEATHER);
 
     public SpectatorEvent(Player player, Arena arena) {
