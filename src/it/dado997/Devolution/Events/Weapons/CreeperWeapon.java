@@ -28,7 +28,7 @@ public class CreeperWeapon implements Listener {
             if(arena != null) {
                 if(arena.getPlayerHandler().getCreeper().contains(player)) {
                     if(arena.getPlayerHandler().getCanShot().contains(player)) {
-                        if(player.getItemInHand().getType() == Material.SULPHUR) {
+                        if(player.getItemInHand().getType() == Material.LEGACY_SULPHUR) {
                         player.launchProjectile(Fireball.class).setIsIncendiary(false);
                         arena.getPlayerHandler().getCanShot().remove(player);
                         new WeaponsCountDown(player, arena).runTaskTimer(Main.getInstance(), 0L, 20L);
